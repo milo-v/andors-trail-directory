@@ -1,0 +1,3 @@
+[submodule "andors-trail"]
+	path = andors-trail
+	url = git@github.com:milo-v/andors-trail.git

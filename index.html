@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andor's Trail Directory</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body>
+    <div>
+        <span>
+            load
+        </span>
+    </div>
+    <script>
+        window.onload = () => {
+            // loadFileNames('./andors-trail')
+            //     .then((data) => {
+            //         console.log(data);
+            //     })
+            //     .catch((error) => {
+            //         alert('Files could not be loaded. please check console for details');
+            //         console.error(error);
+            //     });
+            readJSON()
+        }
+        function readJSON() {
+            const url = './andors-trail/AndorsTrail/res/raw/actorconditions_arulir_mountain.json'
+
+            $.getJSON(url).done((data) => {
+                console.log(data)
+            })
+        }
+    </script>
+</body>
+
+</html>
